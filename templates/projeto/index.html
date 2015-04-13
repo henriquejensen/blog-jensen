@@ -1,0 +1,10 @@
+{% extends 'projeto/base.html' %}
+
+{% block titulo %} Pagina Inicial {% endblock %}
+
+{% block conteudo %}
+	{% for post in posts %}
+		<h1><a href="{{ post.get_absolute_url }}">{{ post }}</a></h1>
+		<p>{{ post.descricao }}</p>
+	{% endfor %}
+{% endblock %}

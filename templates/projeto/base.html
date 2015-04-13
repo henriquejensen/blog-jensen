@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="a descrição do seu site em no máximo 90 caracteres">
+        <meta name="keywords" content="escreva palavras-chaves curtas, máximo 150 caracteres">
+        <title>Blog do Jensen: {% block titulo %} {% endblock %}</title>
+    </head>
+
+        <header>
+            <nav>
+                <a href=" {% url 'index' %} ">Home</a>
+                <a href=" {% url 'admin:index' %} ">Admin Login</a>
+            </nav>
+        </header>
+        
+        <article>
+            <div class="content">
+                {% block conteudo %} {% endblock %}
+            </div>
+        </article>
+    </body>
+</html>

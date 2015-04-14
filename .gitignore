@@ -1,1 +1,5 @@
+# arquivos de tutorial
 *.txt
+
+# banco de dados
+*.sqlite3

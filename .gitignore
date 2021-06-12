@@ -1,5 +1,3 @@
-# arquivos de tutorial
-*.txt
-
-# banco de dados
-*.sqlite3
+node_modules/
+.cache/
+public
